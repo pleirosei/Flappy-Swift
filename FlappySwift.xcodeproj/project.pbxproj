@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6791D5101AC59E2900020B2F /* tiki-bottom-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 6791D50A1AC59E2900020B2F /* tiki-bottom-01.png */; };
+		6791D5111AC59E2900020B2F /* tiki-bottom-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 6791D50B1AC59E2900020B2F /* tiki-bottom-02.png */; };
+		6791D5121AC59E2900020B2F /* tiki-bottom-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 6791D50C1AC59E2900020B2F /* tiki-bottom-03.png */; };
+		6791D5131AC59E2900020B2F /* tiki-top-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 6791D50D1AC59E2900020B2F /* tiki-top-01.png */; };
+		6791D5141AC59E2900020B2F /* tiki-top-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 6791D50E1AC59E2900020B2F /* tiki-top-02.png */; };
+		6791D5151AC59E2900020B2F /* tiki-top-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 6791D50F1AC59E2900020B2F /* tiki-top-03.png */; };
 		67ECF2B41AC450A700689C62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ECF2B31AC450A700689C62 /* AppDelegate.swift */; };
 		67ECF2B61AC450A700689C62 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 67ECF2B51AC450A700689C62 /* GameScene.sks */; };
 		67ECF2B81AC450A700689C62 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ECF2B71AC450A700689C62 /* GameScene.swift */; };
@@ -15,6 +21,10 @@
 		67ECF2BF1AC450A700689C62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67ECF2BE1AC450A700689C62 /* Images.xcassets */; };
 		67ECF2C21AC450A700689C62 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67ECF2C01AC450A700689C62 /* LaunchScreen.xib */; };
 		67ECF2CE1AC450A700689C62 /* FlappySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ECF2CD1AC450A700689C62 /* FlappySwiftTests.swift */; };
+		67ECF2DB1AC4515D00689C62 /* groundpiece.png in Resources */ = {isa = PBXBuildFile; fileRef = 67ECF2D81AC4515D00689C62 /* groundpiece.png */; };
+		67ECF2DC1AC4515D00689C62 /* hills.png in Resources */ = {isa = PBXBuildFile; fileRef = 67ECF2D91AC4515D00689C62 /* hills.png */; };
+		67ECF2DD1AC4515D00689C62 /* sky.png in Resources */ = {isa = PBXBuildFile; fileRef = 67ECF2DA1AC4515D00689C62 /* sky.png */; };
+		67ECF2E51AC46CF900689C62 /* bird.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 67ECF2E41AC46CF900689C62 /* bird.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6791D50A1AC59E2900020B2F /* tiki-bottom-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiki-bottom-01.png"; sourceTree = "<group>"; };
+		6791D50B1AC59E2900020B2F /* tiki-bottom-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiki-bottom-02.png"; sourceTree = "<group>"; };
+		6791D50C1AC59E2900020B2F /* tiki-bottom-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiki-bottom-03.png"; sourceTree = "<group>"; };
+		6791D50D1AC59E2900020B2F /* tiki-top-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiki-top-01.png"; sourceTree = "<group>"; };
+		6791D50E1AC59E2900020B2F /* tiki-top-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiki-top-02.png"; sourceTree = "<group>"; };
+		6791D50F1AC59E2900020B2F /* tiki-top-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiki-top-03.png"; sourceTree = "<group>"; };
 		67ECF2AE1AC450A700689C62 /* FlappySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67ECF2B21AC450A700689C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67ECF2B31AC450A700689C62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +56,10 @@
 		67ECF2C71AC450A700689C62 /* FlappySwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlappySwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67ECF2CC1AC450A700689C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67ECF2CD1AC450A700689C62 /* FlappySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlappySwiftTests.swift; sourceTree = "<group>"; };
+		67ECF2D81AC4515D00689C62 /* groundpiece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groundpiece.png; sourceTree = "<group>"; };
+		67ECF2D91AC4515D00689C62 /* hills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hills.png; sourceTree = "<group>"; };
+		67ECF2DA1AC4515D00689C62 /* sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sky.png; sourceTree = "<group>"; };
+		67ECF2E41AC46CF900689C62 /* bird.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bird.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +101,8 @@
 		67ECF2B01AC450A700689C62 /* FlappySwift */ = {
 			isa = PBXGroup;
 			children = (
+				67ECF2E41AC46CF900689C62 /* bird.atlas */,
+				67ECF2D71AC450C900689C62 /* Art */,
 				67ECF2B31AC450A700689C62 /* AppDelegate.swift */,
 				67ECF2B51AC450A700689C62 /* GameScene.sks */,
 				67ECF2B71AC450A700689C62 /* GameScene.swift */,
@@ -116,6 +138,22 @@
 				67ECF2CC1AC450A700689C62 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67ECF2D71AC450C900689C62 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				67ECF2D81AC4515D00689C62 /* groundpiece.png */,
+				6791D50A1AC59E2900020B2F /* tiki-bottom-01.png */,
+				6791D50B1AC59E2900020B2F /* tiki-bottom-02.png */,
+				6791D50C1AC59E2900020B2F /* tiki-bottom-03.png */,
+				6791D50D1AC59E2900020B2F /* tiki-top-01.png */,
+				6791D50E1AC59E2900020B2F /* tiki-top-02.png */,
+				6791D50F1AC59E2900020B2F /* tiki-top-03.png */,
+				67ECF2D91AC4515D00689C62 /* hills.png */,
+				67ECF2DA1AC4515D00689C62 /* sky.png */,
+			);
+			name = Art;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,10 +236,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6791D5121AC59E2900020B2F /* tiki-bottom-03.png in Resources */,
+				6791D5131AC59E2900020B2F /* tiki-top-01.png in Resources */,
+				6791D5141AC59E2900020B2F /* tiki-top-02.png in Resources */,
 				67ECF2C21AC450A700689C62 /* LaunchScreen.xib in Resources */,
 				67ECF2BF1AC450A700689C62 /* Images.xcassets in Resources */,
+				6791D5101AC59E2900020B2F /* tiki-bottom-01.png in Resources */,
 				67ECF2B61AC450A700689C62 /* GameScene.sks in Resources */,
+				6791D5151AC59E2900020B2F /* tiki-top-03.png in Resources */,
 				67ECF2BD1AC450A700689C62 /* Main.storyboard in Resources */,
+				67ECF2DC1AC4515D00689C62 /* hills.png in Resources */,
+				67ECF2DD1AC4515D00689C62 /* sky.png in Resources */,
+				67ECF2E51AC46CF900689C62 /* bird.atlas in Resources */,
+				67ECF2DB1AC4515D00689C62 /* groundpiece.png in Resources */,
+				6791D5111AC59E2900020B2F /* tiki-bottom-02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +461,7 @@
 				67ECF2D31AC450A700689C62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67ECF2D41AC450A700689C62 /* Build configuration list for PBXNativeTarget "FlappySwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +470,7 @@
 				67ECF2D61AC450A700689C62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
