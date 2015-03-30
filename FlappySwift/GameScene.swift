@@ -156,14 +156,27 @@ class GameScene: SKScene {
         // Add groud sprites
         for var x = 0; x < totalGroundPieces; x++ {
             var sprite = SKSpriteNode(imageNamed: "groundpiece")
+            groundPieces.append(sprite)
+            
+            var wSpacing = sprite.size.width / 2
+            var hSpacing = sprite.size.height / 2
+            
+            if x == 0 {
+                sprite.position = CGPointMake(wSpacing, hSpacing)
+            } else {
+                sprite.position = CGPointMake((wSpacing * 2) + groundPieces[x - 1].position.x, groundPieces[x - 1].position.y)
+            }
+            
+
             sprite.physicsBody = SKPhysicsBody(rectangleOfSize: sprite.size)
             sprite.physicsBody?.dynamic = false
             sprite.physicsBody?.categoryBitMask = category_ground
+            sprite.physicsBody?.contactTestBitMask = category_bird
             sprite.zPosition = 5
             self.addChild(sprite)
 //            var sprite = SKSpriteNode(imageNamed: "groundpiece")
 //            groundPieces.append(sprite)
-//            
+//
 //            var wSpacing = sprite.size.width / 2
 //            var hSpacing = sprite.size.height / 2
 //            
@@ -190,12 +203,22 @@ class GameScene: SKScene {
         self.addChild(bird)
         bird.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))
         bird.runAction(SKAction.repeatActionForever(SKAction.animateWithTextures(birdFrames, timePerFrame: 0.2, resize: false, restore: true)))
+        bird.physicsBody = SKPhysicsBody(circleOfRadius: bird.size.height / 2.0)
+        bird.physicsBody?.dynamic = true
+        bird.zPosition = 4
+        bird.physicsBody?.categoryBitMask = category_bird
+        bird.physicsBody?.collisionBitMask = category_ground | category_tiki
+        bird.physicsBody?.contactTestBitMask = category_ground | category_tiki
     }
     
     func startGame() {
         for sprite in groundPieces {
-            sprite.runAction(moveGroundForeverAction)
+            sprite.runAction(moveObstacleForeverAction)
         }
+        
+        tikiTimer = NSTimer(timeInterval: timeBetweenObstacles, target: self, selector: "createTikiSet:", userInfo: nil, repeats: true)
+        NSRunLoop.mainRunLoop().addTimer(tikiTimer, forMode: NSDefaultRunLoopMode)
+        tikiTimer.fire()
     }
     
     func groundMovement() {
